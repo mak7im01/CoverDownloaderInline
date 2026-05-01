@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250" width="250" height="250">
+  <defs>
+    <clipPath id="coverClip">
+      <rect x="35" y="35" width="155" height="155" rx="20"/>
+    </clipPath>
+  </defs>
+
+  <!-- Фон -->
+  <rect width="250" height="250" rx="40" fill="#1a1a1a"/>
+
+  <!-- Обложка альбома (градиентные полосы) -->
+  <g clip-path="url(#coverClip)">
+    <rect x="35" y="35"  width="155" height="52" fill="#3a2a5e"/>
+    <rect x="35" y="87"  width="155" height="52" fill="#2a3a5e"/>
+    <rect x="35" y="139" width="155" height="51" fill="#2a4a4e"/>
+  </g>
+  <rect x="35" y="35" width="155" height="155" rx="20" fill="none" stroke="#4a4a7a" stroke-width="4"/>
+
+  <!-- Нотка на обложке -->
+  <g fill="#a080e0" opacity="0.7">
+    <ellipse cx="105" cy="130" rx="18" ry="13" transform="rotate(-15 105 130)"/>
+    <rect x="120" y="60" width="7" height="74" rx="3.5"/>
+    <path d="M127 60 Q165 76 157 108 Q141 90 127 96 Z"/>
+  </g>
+
+  <!-- Кнопка скачивания -->
+  <circle cx="185" cy="185" r="42" fill="#1a1a2e" stroke="#2d2d4e" stroke-width="3"/>
+  <circle cx="185" cy="185" r="36" fill="#5b3fa0"/>
+
+  <!-- Стрелка вниз -->
+  <line x1="185" y1="163" x2="185" y2="196" stroke="white" stroke-width="7" stroke-linecap="round"/>
+  <polyline points="167,186 185,206 203,186" fill="none" stroke="white" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Основание стрелки -->
+  <line x1="168" y1="210" x2="202" y2="210" stroke="white" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,20 @@
+{
+    "name": "CoverDownloaderInline",
+    "libraryLogo": "logo.svg",
+    "author": "dobryjigrok",
+    "description": "Скачивание обложки трека — кнопка рядом с названием трека",
+    "version": "1.0.0",
+    "type": "script",
+    "script": "script.js",
+    "tags": [
+        "script",
+        "cover",
+        "download",
+        "utility"
+    ],
+    "image": "logo.svg",
+    "banner": "banner.svg",
+    "fromPext": true,
+    "installSource": "local",
+    "id": "c3d6f3325843dad823a2ccbe"
+}

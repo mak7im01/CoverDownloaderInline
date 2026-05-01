@@ -1,0 +1,89 @@
+{
+    "sections": [
+        {
+            "title": "Основные настройки",
+            "items": [
+                {
+                    "id": "imageQuality",
+                    "name": "Качество изображения",
+                    "description": "Выберите качество скачиваемых обложек",
+                    "type": "selector",
+                    "selected": 3,
+                    "options": {
+                        "1": {
+                            "event": "lowQuality",
+                            "name": "Низкое (200x200)"
+                        },
+                        "2": {
+                            "event": "mediumQuality",
+                            "name": "Среднее (400x400)"
+                        },
+                        "3": {
+                            "event": "highQuality",
+                            "name": "Высокое (1000x1000)"
+                        },
+                        "4": {
+                            "event": "originalQuality",
+                            "name": "Оригинал (максимум)"
+                        }
+                    },
+                    "defaultParameter": 3
+                },
+                {
+                    "id": "showNotification",
+                    "name": "Показывать уведомления",
+                    "description": "Отображать уведомление при скачивании обложки",
+                    "type": "button",
+                    "bool": false,
+                    "defaultParameter": true
+                }
+            ]
+        },
+        {
+            "title": "Сохранение файлов",
+            "items": [
+                {
+                    "id": "fileNameFormat",
+                    "name": "Формат имени файла",
+                    "description": "Используйте {artist} и {title} для шаблона имени файла",
+                    "type": "text",
+                    "buttons": [
+                        {
+                            "id": "fileNamePattern",
+                            "name": "Шаблон имени",
+                            "text": "{artist} - {title}",
+                            "defaultParameter": "{artist} - {title}"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Внешний вид",
+            "items": [
+                {
+                    "id": "iconSize",
+                    "name": "Размер иконки",
+                    "description": "Размер иконки скачивания в пикселях",
+                    "type": "slider",
+                    "min": 12,
+                    "max": 24,
+                    "step": 2,
+                    "value": 18,
+                    "defaultParameter": 18
+                },
+                {
+                    "id": "iconOpacity",
+                    "name": "Прозрачность иконки",
+                    "description": "Прозрачность иконки в неактивном состоянии (5-100%)",
+                    "type": "slider",
+                    "min": 5,
+                    "max": 100,
+                    "step": 5,
+                    "value": 70,
+                    "defaultParameter": 70
+                }
+            ]
+        }
+    ]
+}
